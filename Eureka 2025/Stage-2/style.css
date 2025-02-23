@@ -1,0 +1,417 @@
+body{
+    color: #ffffff;
+    background-color: #050101;
+    margin: 0px;
+    padding: 10px;
+    scrollbar-width: none;
+    overflow-x: hidden;
+
+}
+h1 {
+  font-weight: bold;  /* 'font-style' doesn't support 'bold', use 'font-weight' */
+  font-size: 2.5rem;  /* Adjust size as needed */
+  background: linear-gradient(90deg, #ff7eb3, #96ffe5, #fe4f4f); /* Gradient effect */
+  -webkit-background-clip: text; /* Clips the gradient to text */
+  -webkit-text-fill-color: transparent; /* Makes text transparent to show the gradient */
+  text-align: center; /* Centers the heading */
+  font-family: 'Poppins', sans-serif; /* Use a stylish font */
+  text-transform: uppercase; /* Makes text uppercase */
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow-x: hidden;
+    text-align: center;
+}
+
+/* Puzzle Question Container */
+#puzzle-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+  color: white;
+  font-family: Arial, sans-serif;
+  font-size: 25px;
+  width: 90%;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+
+
+/* Grid Container */
+#puzzle-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 50px);
+  grid-gap: 10px;
+  justify-content: center;
+}
+#puzzle-grid1 {
+  display: grid;
+  grid-template-columns: repeat(13, 40px);
+  grid-gap: 5px;
+  justify-content: center;
+}
+
+/* Puzzle Cells */
+.puzzle-cell {
+  width: 40px;
+  height: 40px;
+  font-size: 15px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  color: white;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+.puzzle-cell2 {
+  width: 40px;
+  height: 40px;
+  font-size: 15px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  color: white;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+
+/* Text Inputs */
+.puzzle-cell input {
+  width: 100%;
+  height: 100%;
+  font-size: 18px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 8px;
+  background-color: transparent;
+  color: white;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+}
+.puzzle-cell2 input {
+  width: 100%;
+  height: 100%;
+  font-size: 18px;
+  text-align: center;
+  background-color: transparent;
+  padding-right: 8px;
+  color: white;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+}
+
+/* Blue Highlighted Cells */
+.puzzle-highlight {
+  background-color: #4e6cbf;
+}
+
+/* Operators */
+.puzzle-operator {
+  background-color: #dd2aaa;
+}
+.puzzle-off {
+  background-color: #1e0d2a;
+  width: 40px;
+  height: 40px;
+  font-size: 15px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  color: white;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+.btn1{
+  margin: 40px 0px;
+  width: 200px;
+  height: 60px;
+  border-radius: 20px;
+  background: linear-gradient(90deg, #ff72ef, #a90a52);
+  color: #ffffff;
+  font-size: large;
+}
+
+.btn1:hover{
+  background: linear-gradient(90deg, #951e87, #a90a52);
+}
+.btn1:disabled{
+  background: linear-gradient(90deg, #44103e, #2c0a19);
+  color: #1d3557;
+}
+/* Results */
+.puzzle-result {
+  background-color: #1d3557;
+  font-weight: bold;
+}
+
+#question-container{
+  width: 90%;
+  font-size: 28px;
+
+}
+#question-container1{
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+font-size: 28px;
+width: 98%;
+
+
+}
+.question{
+  display: flex;
+  flex-direction: column;
+  font-size: 24px;
+  padding:0 30px;
+}
+.question-image{
+  width: 600px;
+  height: 350px;
+  margin: 20px auto;
+
+}
+.submit{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+  margin-top: 20px;
+  
+
+}
+input{
+  width: 300px;
+  height: 50px;
+  border-radius: 20px;
+  padding-left: 10px;
+  background: linear-gradient(90deg, #187956, #47e2a9);
+  color: #ffffff;
+  font-size: large;
+}
+::placeholder {
+  color: rgb(255, 255, 255);
+  opacity: 1; /* Firefox */
+}
+.btn{
+  padding-left: 10px;
+  margin-top: 2px;
+  width: 200px;
+  height: 60px;
+  border-radius: 20px;
+  background: linear-gradient(90deg, #ff72ef, #a90a52);
+  color: #ffffff;
+  font-size: large;
+
+  margin-left: 5px ;
+
+}
+.btn:hover{
+background: linear-gradient(90deg, #951e87, #a90a52);
+}
+.btn:disabled{
+background: linear-gradient(90deg, #44103e, #2c0a19);
+color: #1d3557;
+}
+
+.poppins-thin {
+  font-family: "Poppins", serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.poppins-extralight {
+  font-family: "Poppins", serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.poppins-light {
+  font-family: "Poppins", serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.poppins-regular {
+  font-family: "Poppins", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins-medium {
+  font-family: "Poppins", serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.poppins-semibold {
+  font-family: "Poppins", serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.poppins-bold {
+  font-family: "Poppins", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.poppins-extrabold {
+  font-family: "Poppins", serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.poppins-black {
+  font-family: "Poppins", serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.poppins-thin-italic {
+  font-family: "Poppins", serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.poppins-extralight-italic {
+  font-family: "Poppins", serif;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.poppins-light-italic {
+  font-family: "Poppins", serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.poppins-regular-italic {
+  font-family: "Poppins", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.poppins-medium-italic {
+  font-family: "Poppins", serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.poppins-semibold-italic {
+  font-family: "Poppins", serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.poppins-bold-italic {
+  font-family: "Poppins", serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.poppins-extrabold-italic {
+  font-family: "Poppins", serif;
+  font-weight: 800;
+  font-style: italic;
+}
+
+.poppins-black-italic {
+  font-family: "Poppins", serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
+
+/* Responsive Styling */
+@media (max-width: 730px) {
+  .question{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .question-image{
+    width: 380px;
+    height: 320px;
+    margin: 20px 0px;
+
+}
+}
+@media (max-width: 610px) {
+
+
+  .puzzle-cell {
+    width: 25px;
+    height: 25px;
+     
+  }
+  .puzzle-cell input{
+    font-size: 11px;
+    font-weight: bold;
+  }
+  #puzzle-grid {
+    grid-template-columns: repeat(7, 25px);
+    grid-gap: 10px;
+    justify-content: center;
+    
+  }
+  .puzzle-off{
+    width: 23px;
+    height: 23px;
+
+  }
+  .puzzle-cell2 {
+    width: 25px;
+    height: 25px;
+     
+  }
+  .puzzle-cell2 input{
+    font-size: 12px;
+    width: 10px;
+    font-weight: bold;
+  }
+  #puzzle-grid1 {
+    grid-template-columns: repeat(13, 25px);
+    grid-gap: 5px;
+    justify-content: center;
+    
+  }
+  
+
+.submit{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.btn{
+  margin: 20px 0px;
+}
+}
+
+
+

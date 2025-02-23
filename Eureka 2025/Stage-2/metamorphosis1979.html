@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Poppins:wght@100;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <title>Round 1</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Toastr CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+
+<!-- jQuery (Toastr depends on it) -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<!-- Toastr JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+
+</head>
+<body>
+    <div class="container">
+        <h1>Round 1</h1>
+        <div id="question-container1" class="poppins-regular">
+        <div id="puzzle-container">
+            <p>Q1. In this crossword try to solve in such a way that the 9 empty slots gets filled by all 9 digits from 1 to 9, by using them only once here. Specific precedence order of symbols using BODMAS rule is not applicable here and it only follows left to right or top to bottom precedence.
+            </p>
+            <div id="puzzle-grid">
+                <div class="puzzle-cell"></div>
+                <div class="puzzle-cell puzzle-operator">x</div>
+                <div class="puzzle-cell"></div>
+                <div class="puzzle-cell puzzle-operator">÷</div>
+                <div class="puzzle-cell"></div>
+                <div class="puzzle-cell puzzle-operator">=</div>
+                <div class="puzzle-cell puzzle-result">2</div>
+
+        
+                <div class="puzzle-cell puzzle-operator">-</div>
+                <div class="puzzle-off"></div>
+                <div class="puzzle-cell puzzle-operator">+</div>
+                <div class="puzzle-off "></div>
+                <div class="puzzle-cell puzzle-operator">-</div>
+                <div class="puzzle-off"></div>
+                <div class="puzzle-off"></div>
+        
+                <div class="puzzle-cell"></div>
+                <div class="puzzle-cell puzzle-operator">+</div>
+                <div class="puzzle-cell"></div>
+                <div class="puzzle-cell puzzle-operator">-</div>
+                <div class="puzzle-cell"></div>
+                <div class="puzzle-cell puzzle-operator ">=</div>
+                <div class="puzzle-cell puzzle-result">2</div>
+        
+                <div class="puzzle-cell puzzle-operator">x</div>
+                <div class="puzzle-off"></div>
+                <div class="puzzle-cell puzzle-operator">÷</div>
+                <div class="puzzle-off "></div>
+                <div class="puzzle-cell puzzle-operator">+</div>
+                <div class="puzzle-off"></div>
+                <div class="puzzle-off"></div>
+        
+                <div class="puzzle-cell"></div>
+                <div class="puzzle-cell puzzle-operator">x</div>
+                <div class="puzzle-cell"></div>
+                <div class="puzzle-cell puzzle-operator">+</div>
+                <div class="puzzle-cell"></div>
+                <div class="puzzle-cell puzzle-operator ">=</div>
+                <div class="puzzle-cell puzzle-result">22</div>
+        
+                <div class="puzzle-cell puzzle-operator">=</div>
+                <div class="puzzle-off"></div>
+                <div class="puzzle-cell puzzle-operator">=</div>
+                <div class="puzzle-off "></div>
+                <div class="puzzle-cell puzzle-operator">=</div>
+                <div class="puzzle-off"></div>
+                <div class="puzzle-off"></div>
+
+                <div class="puzzle-cell puzzle-result">7</div>
+                <div class="puzzle-off"></div>
+                <div class="puzzle-cell puzzle-result">2</div>
+                <div class="puzzle-off "></div>
+                <div class="puzzle-cell puzzle-result">13</div>
+                <div class="puzzle-off"></div>
+                <div class="puzzle-off"></div>
+            </div>
+
+            <button id="submitpuzz1" class="btn1" >Submit</button>
+        </div>
+
+        <div id="puzzle-container">
+            <p>Q2. Fill-up the crossword using Leonardo da Vinci's greatest ever creations with the funny hints given below:
+            </n>Across: A> I smile so mysteriously,  B> Give me some food, I'm hungry! , C> You'll require me while sky-diving, D> I am a Horse.
+            </n>Down: A> I look like a bird and can fly, B> My anatomy is inscribed in a circle and square.
+            </n>Up: A> My mechanism is used in cranes and plungers, B> I am also known as Helicopter today.</t>(USE ONLY CAPITAL LETTERS)
+            </p>
+            <div id="puzzle-grid1">
+                <div class="puzzle-off"></div>
+                <div class="puzzle-off"></div>
+                <div class="puzzle-off"></div>
+                <div class="puzzle-off"></div>
+                <div class="puzzle-off"></div>
+                <div class="puzzle-cell2"></div>
+                <div class="puzzle-off"></div>
+                <div class="puzzle-off"></div>
+                <div class="puzzle-off"></div>
+                <div class="puzzle-off"></div>
+                <div class="puzzle-off"></div>
+                <div class="puzzle-off"></div>
+                <div class="puzzle-off"></div>
+                
+
+
+                <div class="puzzle-cell2"></div>
+                <div class="puzzle-cell puzzle-operator">O</div>
+                <div class="puzzle-cell2"></div>
+                <div class="puzzle-cell2"></div>
+                <div class="puzzle-cell2"></div>
+                <div class="puzzle-cell puzzle-operator">I</div>
+                <div class="puzzle-cell2"></div>
+                <div class="puzzle-cell2"></div>
+                <div class="puzzle-off"></div>
+                <div class="puzzle-off"></div>
+                <div class="puzzle-off"></div>
+                <div class="puzzle-off"></div>
+                <div class="puzzle-off"></div>
+                
+
+                <div class="puzzle-off"></div>
+                <div class="puzzle-cell2"></div>
+                <div class="puzzle-cell puzzle-operator">L</div>
+                <div class="puzzle-cell2"></div>
+                <div class="puzzle-cell2"></div>
+                <div class="puzzle-cell puzzle-operator">T</div>
+                <div class="puzzle-cell2"></div>
+                <div class="puzzle-cell2"></div>
+                <div class="puzzle-cell2"></div>
+                <div class="puzzle-cell2"></div>
+                <div class="puzzle-cell puzzle-operator">E</div>
+                <div class="puzzle-cell2"></div>
+                <div class="puzzle-off"></div>
+                
+
+
+                <div class="puzzle-off"></div>
+                <div class="puzzle-cell2"></div>
+                <div class="puzzle-off"></div>
+                <div class="puzzle-cell2"></div>
+                <div class="puzzle-off"></div>
+                <div class="puzzle-cell2"></div>
+                <div class="puzzle-off"></div>
+                <div class="puzzle-off"></div>
+                <div class="puzzle-off"></div>
+                <div class="puzzle-off"></div>
+                <div class="puzzle-off"></div>
+                <div class="puzzle-off"></div>
+                <div class="puzzle-off"></div>
+                
+
+
+
+
+                <div class="puzzle-off"></div>
+                <div class="puzzle-cell2"></div>
+                <div class="puzzle-off"></div>
+                <div class="puzzle-cell2"></div>
+                <div class="puzzle-off"></div>
+                <div class="puzzle-cell2"></div>
+                <div class="puzzle-off"></div>
+                <div class="puzzle-off"></div>
+                <div class="puzzle-off"></div>
+                <div class="puzzle-off"></div>
+                <div class="puzzle-off"></div>
+                <div class="puzzle-off"></div>
+                <div class="puzzle-off"></div>
+                
+
+                <div class="puzzle-off"></div>
+                <div class="puzzle-cell2"></div>
+                <div class="puzzle-off"></div>
+                <div class="puzzle-cell2"></div>
+                <div class="puzzle-off"></div>
+                <div class="puzzle-cell2"></div>
+                <div class="puzzle-cell2"></div>
+                <div class="puzzle-off"></div>
+                <div class="puzzle-off"></div>
+                <div class="puzzle-off"></div>
+                <div class="puzzle-off"></div>
+                <div class="puzzle-off"></div>
+                <div class="puzzle-off"></div>
+                
+
+                <div class="puzzle-off"></div>
+                <div class="puzzle-cell2"></div>
+                <div class="puzzle-off"></div>
+                <div class="puzzle-cell2"></div>
+                <div class="puzzle-off"></div>
+                <div class="puzzle-cell2"></div>
+                <div class="puzzle-cell2"></div>
+                <div class="puzzle-off"></div>
+                <div class="puzzle-off"></div>
+                <div class="puzzle-off"></div>
+                <div class="puzzle-off"></div>
+                <div class="puzzle-off"></div>
+                <div class="puzzle-off"></div>
+                
+
+                <div class="puzzle-off"></div>
+                <div class="puzzle-cell2"></div>
+                <div class="puzzle-off"></div>
+                <div class="puzzle-cell2"></div>
+                <div class="puzzle-cell puzzle-operator">P</div>
+                <div class="puzzle-cell2"></div>
+                <div class="puzzle-cell2"></div>
+                <div class="puzzle-cell2"></div>
+                <div class="puzzle-cell2"></div>
+                <div class="puzzle-cell2"></div>
+                <div class="puzzle-cell2">G</div>
+                <div class="puzzle-cell2"></div>
+                <div class="puzzle-cell2"></div>
+                
+
+                <div class="puzzle-off"></div>
+                <div class="puzzle-cell puzzle-operator">P</div>
+                <div class="puzzle-cell puzzle-operator">G</div>
+                <div class="puzzle-cell2"></div>
+                <div class="puzzle-cell puzzle-operator">A</div>
+                <div class="puzzle-cell2"></div>
+                <div class="puzzle-cell puzzle-operator">C</div>
+                <div class="puzzle-cell2"></div>
+                <div class="puzzle-cell2"></div>
+                <div class="puzzle-cell2"></div>
+                <div class="puzzle-cell puzzle-operator">L</div>
+                <div class="puzzle-cell2"></div>
+                <div class="puzzle-cell puzzle-operator">O</div>
+                
+
+                <div class="puzzle-off"></div>
+                <div class="puzzle-cell2"></div>
+                <div class="puzzle-off"></div>
+                <div class="puzzle-cell2"></div>
+                <div class="puzzle-off"></div>
+                <div class="puzzle-cell2"></div>
+                <div class="puzzle-cell2"></div>
+                <div class="puzzle-off"></div>
+                <div class="puzzle-off"></div>
+                <div class="puzzle-off"></div>
+                <div class="puzzle-off"></div>
+                <div class="puzzle-off"></div>
+                <div class="puzzle-off"></div>
+                
+
+                <div class="puzzle-off"></div>
+                <div class="puzzle-cell2"></div>
+                <div class="puzzle-off"></div>
+                <div class="puzzle-cell2"></div>
+                <div class="puzzle-off"></div>
+                <div class="puzzle-cell2"></div>
+                <div class="puzzle-cell2"></div>
+                <div class="puzzle-off"></div>
+                <div class="puzzle-off"></div>
+                <div class="puzzle-off"></div>
+                <div class="puzzle-off"></div>
+                <div class="puzzle-off"></div>
+                <div class="puzzle-off"></div>
+                
+
+                <div class="puzzle-off"></div>
+                <div class="puzzle-cell puzzle-operator">R</div>
+                <div class="puzzle-off"></div>
+                <div class="puzzle-cell puzzle-operator">H</div>
+                <div class="puzzle-off"></div>
+                <div class="puzzle-cell puzzle-operator">N</div>
+                <div class="puzzle-cell2"></div>
+                <div class="puzzle-off"></div>
+                <div class="puzzle-off"></div>
+                <div class="puzzle-off"></div>
+                <div class="puzzle-off"></div>
+                <div class="puzzle-off"></div>
+                <div class="puzzle-off"></div>
+                
+
+                <div class="puzzle-off"></div>
+                <div class="puzzle-off"></div>
+                <div class="puzzle-off"></div>
+                <div class="puzzle-off"></div>
+                <div class="puzzle-off"></div>
+                <div class="puzzle-off"></div>
+                <div class="puzzle-cell2"></div>
+                <div class="puzzle-off"></div>
+                <div class="puzzle-off"></div>
+                <div class="puzzle-off"></div>
+                <div class="puzzle-off"></div>
+                <div class="puzzle-off"></div>
+                <div class="puzzle-off"></div>
+                
+
+                <div class="puzzle-off"></div>
+                <div class="puzzle-off"></div>
+                <div class="puzzle-off"></div>
+                <div class="puzzle-off"></div>
+                <div class="puzzle-off"></div>
+                <div class="puzzle-off"></div>
+                <div class="puzzle-cell2"></div>
+                <div class="puzzle-off"></div>
+                <div class="puzzle-off"></div>
+                <div class="puzzle-off"></div>
+                <div class="puzzle-off"></div>
+                <div class="puzzle-off"></div>
+                <div class="puzzle-off"></div>
+                
+
+                <div class="puzzle-off"></div>
+                <div class="puzzle-off"></div>
+                <div class="puzzle-off"></div>
+                <div class="puzzle-off"></div>
+                <div class="puzzle-off"></div>
+                <div class="puzzle-off"></div>
+                <div class="puzzle-cell2"></div>
+                <div class="puzzle-off"></div>
+                <div class="puzzle-off"></div>
+                <div class="puzzle-off"></div>
+                <div class="puzzle-off"></div>
+                <div class="puzzle-off"></div>
+                <div class="puzzle-off"></div>
+                
+
+                <div class="puzzle-off"></div>
+                <div class="puzzle-off"></div>
+                <div class="puzzle-off"></div>
+                <div class="puzzle-off"></div>
+                <div class="puzzle-off"></div>
+                <div class="puzzle-off"></div>
+                <div class="puzzle-cell puzzle-operator">A</div>
+                <div class="puzzle-off"></div>
+                <div class="puzzle-off"></div>
+                <div class="puzzle-off"></div>
+                <div class="puzzle-off"></div>
+                <div class="puzzle-off"></div>
+                <div class="puzzle-off"></div>
+                
+        
+
+            </div>
+
+            <button id="submitpuzz2" class="btn1" >Submit</button>
+        </div>
+
+
+        <div class="question">
+            <p>Question 3: Five balls (Pink, Red, Yellow, Blue and Black) are playing a game. Winners get declared as soon as the match-ups are decided. Can you find the winner of the “Final Game” along with the runner-up?
+                NA - The colour of the balls are not available. 
+                Answering Format : X Y (where X is the Winner and Y is the Runner-up. For example: BROWN ORANGE)
+                </p>
+            <img src="Picture3.jpg" alt="Question Image" class="question-image">
+            <div class="submit">
+            <input type="text" id="answer13" placeholder="Your answer" autocomplete="off">
+            <button class="btn" id="submit13" >Submit</button>
+            </div>
+        </div>
+    </div>
+</div>
+    <script type="module">    // Make empty cells editable
+        document.querySelectorAll('.puzzle-cell:not(.puzzle-operator):not(.puzzle-result)').forEach(cell => {
+            cell.innerHTML = '<input type="text" maxlength="1">';
+        });
+        document.querySelectorAll('.puzzle-cell2:not(.puzzle-operator):not(.puzzle-result)').forEach(cell => {
+            cell.innerHTML = '<input type="text" maxlength="1">';
+        });</script>
+        <script>
+            const teamName = sessionStorage.getItem("teamName");
+            if(!teamName) {
+                alert("Unauthorized access!");
+                window.location.href = "index.html";
+            }
+        </script>
+    <script type="module" src="script.js">
+    </script>
+</body>
+</html>
